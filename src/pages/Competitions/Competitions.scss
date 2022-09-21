@@ -309,6 +309,11 @@ font-family: Roboto;
 .manstand img{
   height: 50px;
   width: 50px;
+  border-radius: 50%;
+}
+
+.manstand h4{
+  font-weight: bold;
 }
 
 .main{
@@ -488,7 +493,8 @@ color: white;
   margin-left: 1rem;
 }
 .upperHead h2{
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 .head{
   flex: 2;

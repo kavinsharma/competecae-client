@@ -739,10 +739,14 @@ DataForDisplay.latest
             <div className="manstand">
                 <div>
         
-                <img src={man} alt="" />
+                <img src={   comp.userDetails[0].profilePicture.includes(
+                                          "amazonaws"
+                                        )
+                                          ? comp.userDetails[0].profilePicture
+                                          : NA} alt="" />
                 </div>
                 <div>
-                    <h4>Jose</h4>
+                    <h4>{comp.userDetails[0].userName}</h4>
                     <h4>Loose 40 Lounds</h4>
                 </div>
             </div>
@@ -750,7 +754,7 @@ DataForDisplay.latest
         <div className="main">
             <div className="mainFrist">
                 <h1>$5k</h1>
-                <h4>Jose is Risking</h4>
+                <h4>{comp.userDetails[0].userName} is Risking</h4>
             </div>
             <div className="hr">
             <hr />
@@ -758,7 +762,7 @@ DataForDisplay.latest
             </div>
             <div className="mainsecond">
                 <div className="left">
-        <h5>Competition end in</h5>
+        <h5>{comp.name} end in</h5>
         <h2>34 days</h2>
                 </div>
                 <div className="right">
@@ -782,17 +786,17 @@ DataForDisplay.latest
             <div className="mainthird">
                 <div className="upperMainthird">
                     <div className='upperHead'>
-                    <h2>Will Jose Succeed?</h2>
+                    <h2>Will {comp.userDetails[0].userName} Succeed?</h2>
         
                     </div>
                     <div className='img'>
                     <img src={frame} alt="" />
-        <span>80%</span>
+        <span>{comp?.bidCount[0].win}</span>
                     </div>
                     <div className='img'>
         
                     <img src={frame2} alt="" />
-        <span>20%</span>
+        <span>{comp?.bidCount[0].lose}</span>
                     </div>
                 </div>
                 <div className="mainlowerthird">
