@@ -27,6 +27,7 @@ import Navbar from "./components/global/navbar/Navbar.tsx";
 import Dashboard from "./pages/Dashboard/Dashboard.tsx";
 import Reports from "./pages/Reports/Reports";
 import HandleAuth from "./pages/handleAuth/HandleAuth";
+import DashboardSecond from './pages/dashboardanother/Dashboard'
 // import "./style/main.css";
 
 function App() {
@@ -601,6 +602,7 @@ function App() {
                 </RequireAuth>
               }
             ></Route>
+            <Route path='/second-dashboard' element = {<DashboardSecond/>} />
           </Routes>
         </BrowserRouter>
       </AuthProvider>

@@ -4,7 +4,7 @@ import PageContent from "../../components/PageContent/PageContent";
 import Select from "react-select";
 import Bike from "../../assets/images/types/bike.svg";
 import Button from "../../components/Button/Button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useAuthUser } from "react-auth-kit";
 import Modal from "react-modal";
@@ -20,6 +20,7 @@ import NA from "../../assets/images/image-not-available.jpg";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
+
 import {
   LinearProgress,
   createTheme,
@@ -31,6 +32,20 @@ import ProgressBar from "react-bootstrap/ProgressBar";
 import WagePayment from "../../utils/WagePayment";
 import SideBar from "../../components/Side-bar-fixed/Side-bar-fixed";
 import useScrollReset from "../../hooks/useScrollReset.ts";
+
+import arrow from '../../assets/cardimg/arrowdown.png';
+import star from '../../assets/cardimg/star.png';
+import man from '../../assets/cardimg/man.png';
+import frame from '../../assets/cardimg/Frame.png';
+import frame2 from '../../assets/cardimg/frame2.png';
+
+
+
+
+
+
+
+
 
 const Competitions = ({ categories, types }) => {
   const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
@@ -377,6 +392,9 @@ const Competitions = ({ categories, types }) => {
     }),
   };
 
+  const navigate = useNavigate();
+
+
   return (
     <section className="competitions">
       {/* <Sidebar /> */}
@@ -439,7 +457,7 @@ const Competitions = ({ categories, types }) => {
 
           <div className="competitions__latest">
             <h2>Latest Competitions</h2>
-            <div className="competitions__competitions">
+            {/* <div className="competitions__competitions">
               {DataForDisplay.latest
                 ? DataForDisplay.latest
                     .slice(startIndex, endingIndex)
@@ -700,7 +718,143 @@ const Competitions = ({ categories, types }) => {
                       );
                     })
                 : ""}
+            </div> */}
+            <div className="cardOuterWrapper">
+
+{
+DataForDisplay.latest
+? DataForDisplay.latest
+    .slice(startIndex, endingIndex)
+    .map((comp) => {
+      return (
+
+        <div className='cardWrapper'>
+
+        <div className="card">
+            <div className="cardUppertitle">
+                <span> <img src={star} alt="" /> </span>
+                <span>Fitness</span>
+                <span> <img src={arrow} alt="" /> </span>
             </div>
+            <div className="manstand">
+                <div>
+        
+                <img src={man} alt="" />
+                </div>
+                <div>
+                    <h4>Jose</h4>
+                    <h4>Loose 40 Lounds</h4>
+                </div>
+            </div>
+        
+        <div className="main">
+            <div className="mainFrist">
+                <h1>$5k</h1>
+                <h4>Jose is Risking</h4>
+            </div>
+            <div className="hr">
+            <hr />
+        
+            </div>
+            <div className="mainsecond">
+                <div className="left">
+        <h5>Competition end in</h5>
+        <h2>34 days</h2>
+                </div>
+                <div className="right">
+        <div className='one'>
+            <h6>
+                user Record
+            </h6>
+            <h1>
+                8-0
+            </h1>
+        </div>
+        
+        
+        <div className='two'>
+        <h6>other current Competitions</h6>
+        <h1>8</h1>
+        </div>
+                </div>
+            </div>
+        
+            <div className="mainthird">
+                <div className="upperMainthird">
+                    <div className='upperHead'>
+                    <h2>Will Jose Succeed?</h2>
+        
+                    </div>
+                    <div className='img'>
+                    <img src={frame} alt="" />
+        <span>80%</span>
+                    </div>
+                    <div className='img'>
+        
+                    <img src={frame2} alt="" />
+        <span>20%</span>
+                    </div>
+                </div>
+                <div className="mainlowerthird">
+                   
+                        <div className='head'>
+                            <h2>What Other User Think</h2>
+                        </div>
+                        <div className='votes'>
+                            <h4>$1k</h4>
+                            <h3>62 Votes</h3>
+                        </div>
+                        <div className='votes'>
+                            <h4>$600</h4>
+                            <h3>100 Votes</h3>
+                       
+                    </div>
+                </div>
+            </div>
+        
+            <div className='mainforth' >
+                <div>
+                    <h2>
+                        12
+                    </h2>
+                    <h4>start</h4>
+                </div>
+                <div>
+                    <h2>
+                        14
+                    </h2>
+                    <h4>current</h4>
+                </div>
+                <div>
+                    <h2>
+                        50
+                    </h2>
+                    <h4>Goal</h4>
+                </div>
+            </div>
+        </div>
+        <div className="footWrapper">
+        <div className="foot">
+           <button    >?</button>
+           <span>Insider Information </span>
+        </div>
+        {/* second-dashboard */}
+        </div>
+        
+        
+        </div>
+        
+        
+        
+        
+            </div>
+      );
+
+    })
+:""}
+
+</div>
+     
             <div class="d-flex flex-row justify-content-end">
               <button
                 className=" mt-4 flex items-center justify-center gap-1 bg-primary-700 text-yellow-50 text-7xl font-semibold rounded-full py-3 px-7 sm:px-14 hover:no-underline shadow-7xl"

@@ -1,0 +1,43 @@
+.headWrapper{
+    height: 15vh;
+    width: 100%;
+   
+
+}
+
+.Header span{
+    cursor: pointer;
+}
+
+.Header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+
+.logo img{
+    width: 157px;
+height: 93px;
+}
+
+.Header input{
+    height: 50px;
+    width: 260px;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 0, 0.215);
+    padding: 1rem;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile img{
+    margin: 0 10px;
+    height: 30px;
+    width: 30px;
+}
