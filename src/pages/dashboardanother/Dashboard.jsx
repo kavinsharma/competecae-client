@@ -14,6 +14,13 @@ import arrowdown from "../../assets/cardimg/arrowdown.png";
 import image from "../../assets/cardimg/image.png";
 import post from "../../assets/cardimg/video.png";
 import video from "../../assets/cardimg/post.png";
+import fitbit from "../../assets/cardimg/fitbit.png";
+import worun from "../../assets/cardimg/worun.png";
+import garmin from "../../assets/cardimg/garmin.png";
+import img from "../../assets/cardimg/img.png";
+import logo from "../../assets/cardimg/caemobile.png";
+import { FaBars } from 'react-icons/fa';
+
 import {BsReverseLayoutTextSidebarReverse,BsFillPlayBtnFill,BsImage } from 'react-icons/bs'
 import "./Dashbaord.css";
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
@@ -314,6 +321,254 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
+      </div>
+
+
+        {/* mobile view of dashboard started from here */}
+
+        <div className="mobileDashboard">
+        {/* <div className="header">
+          <div className="user">
+            <img src={img} alt="" />
+          </div>
+          <div className="logo">
+            <img src={logo} alt="" />
+          </div>
+
+          <div className="bars">
+            <button>
+              <FaBars />
+            </button>
+          </div>
+        </div> */}
+        <div className="tabs">
+                <button>Fitness</button>
+                <button>Finance</button>
+                <button>Sports</button>
+              </div>
+      <div className="apiMobile">
+        <div className="apiHead">
+          <h4>connect Api</h4>
+        </div>
+        <div className="threeLogo">
+          <img src={fitbit} alt="" />
+          <img src={garmin} alt="" />
+          <img src={worun} alt="" />
+        </div>
+        <div className="learnmore">
+          <p>learn more</p>
+        </div>
+      </div>
+
+      <div className="followersMobile">
+                <h1>1567</h1>
+                <p>Number of followers</p>
+              </div>
+              <div className="MobilePrediction">
+                <div>
+                  <h5>Pridictions</h5>
+                </div>
+                <div className="slideWraper">
+                  <div className="lables">
+                    <div>
+                      <input type="radio" checked />
+                      <span>Yes</span>
+                    </div>
+                    <div>
+                      <h6>80%</h6>
+                    </div>
+                  </div>
+                  <div className="Rangeslider">
+                    <input
+                      type="range"
+                      name=""
+                      id=""
+                      value={80}
+                      max={100}
+                      className="range"
+                    />
+                  </div>
+                </div>
+                <div className="LowerslideWraper">
+                  <div className="lables">
+                    <div>
+                      <input type="radio" />
+                      <span>Yes</span>
+                    </div>
+                    <div>
+                      <h6>80%</h6>
+                    </div>
+                  </div>
+                  <div className="Rangeslider">
+                    <input
+                      type="range"
+                      name=""
+                      id=""
+                      value={20}
+                      max={100}
+                      className="range"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="sliderMobile">
+                <div className="one1">
+                  <h6>Lorem</h6>
+                  <h1>1567</h1>
+                </div>
+                <div className="one2">
+                  <h6>Lorem</h6>
+                  <h1>1567</h1>
+                </div>
+                <div className="one3">
+                  <h6>Lorem</h6>
+                  <h1>1567</h1>
+                </div>
+                <div className="one4">
+                  <h6>Lorem</h6>
+                  <h1>1567</h1>
+                </div>
+                <div className="one5">
+                  <h6>Lorem</h6>
+                  <h1>1567</h1>
+                </div>
+                <div className="one6">
+                  <img src={arrow} alt="" />
+                </div>
+              </div>
+              <div className="chartMobile">
+                <div className="charts">
+
+                  <LineChart width={280} height={130} data={data}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="name" />
+                    <YAxis />
+                    <Tooltip />
+                    <legend />
+                    <Line type="monotone" dataKey="pv" stroke="#8884d8" />
+                    <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+                  </LineChart>
+<div className="miles">
+<p>Miles</p>
+                    <h2>
+                      <img src={arrup} alt="" /> 30000
+                    </h2>
+                    <h2>
+                      <img src={arrdown} alt="" /> 50000
+                    </h2>
+</div>
+
+
+                </div>
+                </div>
+              <div className="chartMobile">
+                <div className="charts">
+
+                  <LineChart width={280} height={130} data={data}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="name" />
+                    <YAxis />
+                    <Tooltip />
+                    <legend />
+                    <Line type="monotone" dataKey="pv" stroke="#8884d8" />
+                    <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+                  </LineChart>
+<div className="miles">
+<p>Pushups</p>
+                    <h2>
+                      <img src={arrup} alt="" /> 30000
+                    </h2>
+                  
+</div>
+
+
+                </div>
+                </div>
+              <div className="chartMobile">
+                <div className="charts">
+
+                  <LineChart width={280} height={130} data={data}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="name" />
+                    <YAxis />
+                    <Tooltip />
+                    <legend />
+                    <Line type="monotone" dataKey="pv" stroke="#8884d8" />
+                    <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+                  </LineChart>
+<div className="miles">
+<p>Crunches</p>
+                    <h2>
+                      <img src={arrup} alt="" /> 30000
+                    </h2>
+                    <h2>
+                      <img src={arrdown} alt="" /> 50000
+                    </h2>
+</div>
+
+
+                </div>
+                </div>
+
+
+                <div className="imgSliderMobile">
+                <div>
+                  <img src={five} alt="" />
+                </div>
+                <div>
+                  <img src={one} alt="" />
+                </div>
+                <div>
+                  <img src={two} alt="" />
+                </div>
+                <div>
+                  <img src={one} alt="" className="imgimg" />
+                </div>
+
+                <div>
+                  <img src={four} alt="" />
+                </div>
+              </div>
+
+              <div className="socialmedia">
+                <div className="borderWrapper">
+                  <span>
+                    
+                   videos <BsFillPlayBtnFill className="icn" />
+                  </span>
+                  <span>
+                    
+                   post <BsReverseLayoutTextSidebarReverse  className="icn" />
+                  </span>
+                  <span>
+                    
+                  photo  <BsImage className="icn" />
+                  </span>
+                </div>
+                <div className="yellowBtn">
+                  <button>Submit</button>
+                </div>
+              </div>
+
+
+
+              <div className="downBtn">
+                <button>
+                  
+                  <img src={arrowdown} alt="" />
+                </button>
+              </div>
+
+
+
+
+
+
+
+
+
+
       </div>
     </>
   );

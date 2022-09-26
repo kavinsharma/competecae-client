@@ -48,8 +48,13 @@ width: 100%;
 
 
 .icons h5{
-    color: rgba(0, 0, 0, 0.175);
+    color: rgba(0, 0, 0, 0.477);
     margin: 1rem 0;
+    text-align: center;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    
 }
 
 .active{

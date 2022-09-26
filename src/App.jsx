@@ -28,6 +28,7 @@ import Dashboard from "./pages/Dashboard/Dashboard.tsx";
 import Reports from "./pages/Reports/Reports";
 import HandleAuth from "./pages/handleAuth/HandleAuth";
 import DashboardSecond from './pages/dashboardanother/Dashboard'
+import DashboardThree from "./pages/Thirddashboard/DashboardTwo";
 // import "./style/main.css";
 
 function App() {
@@ -603,6 +604,7 @@ function App() {
               }
             ></Route>
             <Route path='/second-dashboard' element = {<DashboardSecond/>} />
+            <Route path='/third-dashboard' element = {<DashboardThree/>} />
           </Routes>
         </BrowserRouter>
       </AuthProvider>
