@@ -421,6 +421,7 @@ margin-top: 1rem;
 display: flex;
 align-items: center;
 justify-content: space-between;
+margin-top: 3rem;
 }
 
  .firstChartDashboardTwo  .Info{
@@ -437,6 +438,8 @@ justify-content: space-between;
 .infoUpper h2{
     color: #725095;
     margin-bottom: .5rem;
+    font-weight: bold;
+    font-size: 2rem;
 }
 .infoUpper span{
     margin: 0 .2rem;
@@ -472,6 +475,7 @@ justify-content: space-between;
     align-items: center;
     justify-content: space-around;
     flex: 1;
+    
 }
 
 
@@ -501,6 +505,8 @@ margin-left: 1rem;
 
 .fitbit h1{
     color: #725095;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 
@@ -544,7 +550,7 @@ margin-left: 1rem;
     align-items: center;
     justify-content: center;
 }
-.button{
+.buttonn{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -553,10 +559,10 @@ margin-left: 1rem;
     border-radius: 10px;
     box-sizing: border-box;
     height: 60px;
-    width: 500px;
+    width: 450px;
 }
 
-.button .my{
+.buttonn .my{
     background-color: #725095;
     height: 100%;
     /* width: 100%; */
@@ -570,13 +576,16 @@ margin-left: 1rem;
     font-weight: bold;
     color: white;
 }
-.all{
+ .buttonn .all{
     height: 100%;
     padding: 1rem 2rem;
     border-radius: 10px;
     margin-right: 10px;
     font-weight: bold;
     color: #725095;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -607,4 +616,287 @@ padding: 10px 3rem;
     width: 100%;
     background-color: white;
     margin: 10px 0;
+}
+
+
+
+.dashboardTwoMobile{
+    display: none;
+}
+
+
+
+/* -----------------------------------------responsiveness here------------------------------- */
+@media screen and (max-width:540px) {
+    
+    .dashboardTwo{
+        display: none;
+    }
+
+
+    .dashboardTwoMobile{
+        display: flex;
+        width: 100%;
+        height: 300vh;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        padding: 0 3rem;
+        box-sizing: border-box;
+        
+    }
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.header .logo img{
+    height: 40px;
+    width: 70px;
+}
+
+.tabsMobile{
+    display: flex;
+    margin-top: 2rem;
+}
+
+
+.tabsMobile button{
+    outline: none;
+    border: none;
+    background-color: white;
+    margin: 0 1rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.155);
+    font-weight: bold;
+}
+
+
+
+.wrapperRightMobile{
+    box-shadow:5px 5px 15px rgba(0, 0, 0, 0.145);
+    height: 170px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.wrapperRightMobile .colors{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+.wrapperRightMobile  p{
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+.TestMobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    background-color: white;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    box-sizing: border-box;
+    box-shadow:5px 5px 15px rgba(0, 0, 0, 0.145);
+    border-radius: 10px;
+}
+
+.testing{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding-left: 3rem;
+    
+}
+
+
+.testing h2{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #725095;
+
+}
+
+
+.type{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+.type .category h3{
+font-weight: bold;
+font-size: 1.2rem;
+}
+
+.type .lorem h3{
+    font-size: 1rem;
+}
+
+.paragraph{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 100%;
+    background-color: white;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    box-sizing: border-box;
+    box-shadow:5px 5px 15px rgba(0, 0, 0, 0.145);
+    border-radius: 10px;
+}
+
+.paraBtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+.paraBtn p{
+    color: rgba(0, 0, 0, 0.363);
+    font-size: 1.2rem;
+}
+
+.paraBtn button{
+outline: none;
+border: none;
+background-color: transparent;
+border: 1.6px solid rgba(0, 0, 0, 0.326);
+padding: 0rem .9rem;
+border-radius: 50%;
+color: rgba(0, 0, 0, 0.4);
+font-size: 2rem;
+margin-right: 1rem;
+}
+
+.paraInput{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.paraInput input{
+    background-color: #FFF2D7;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+}
+
+
+.paraInput button{
+    background-color: #E7BC20;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    color: #725095;
+}
+
+.inputTabs{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center;
+    height: 200px;
+    width: 100%;
+    background-color: white;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    box-sizing: border-box;
+    box-shadow:5px 5px 15px rgba(0, 0, 0, 0.145);
+    border-radius: 10px;
+    overflow-x: scroll;
+}
+
+.inputTabs input{
+    background-color: #FFF2D7;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    padding: .7rem 1rem;
+}
+
+.inputTabs button{
+    outline: none;
+    border: none;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.119);
+    height: 30px;
+    width: 200px;
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .2rem;
+    margin: .2rem 5px;
+}
+
+ .inputTabs .firstBtn{
+background-color: #F9DDA7;
+color: #725095;
+}
+
+.inputTabs::-webkit-scrollbar{
+    display: none;
+}
+
+.fitbit{
+    height: 160px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    margin-top: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.186);
+border-radius: 10px;
+}
+
+.fitbit h1{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.followers h1{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+
+
 }

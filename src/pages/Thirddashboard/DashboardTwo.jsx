@@ -14,6 +14,10 @@ import arrowdown from "../../assets/cardimg/arrowdown.png";
 import image from "../../assets/cardimg/image.png";
 import post from "../../assets/cardimg/video.png";
 import video from "../../assets/cardimg/post.png";
+import logo from "../../assets/cardimg/cae2.png";
+import img from "../../assets/cardimg/img.png";
+
+import { FaBars } from "react-icons/fa";
 import {
   BsReverseLayoutTextSidebarReverse,
   BsFillPlayBtnFill,
@@ -190,7 +194,7 @@ const DashboardTwo = () => {
               </div>
 
               <div className="compBtn">
-                <div className="button">
+                <div className="buttonn">
                     <div className="my">
                         My Competitions
                     </div>
@@ -306,6 +310,158 @@ const DashboardTwo = () => {
           </div>
         </div>
       </div>
+
+{/* ------------------------------for mobile ----------------------------------------------------- */}
+
+<div className="dashboardTwoMobile">
+       {/* <div className="header">
+        <div className="user">
+<img src={img} alt=""  />
+        </div>
+        <div className="logo">
+<img src={logo} alt="" />
+        </div>
+        <div className="bars">
+<span> <FaBars /> </span>
+        </div>
+
+       </div> */}
+       <div className="tabsMobile">
+                <button>Update</button>
+                <button>Competition Activity</button>
+              </div>
+
+              <div className="wrapperRightMobile">
+                <div>
+                  <h5>connect Api</h5>
+                </div>
+                <div className="colors">
+                  <div className="organge"></div>
+                  <div className="yellowgreen"></div>
+                  <div className="purple"></div>
+                </div>
+
+                <div>
+                  <p>more details</p>
+                </div>
+              </div>
+
+              <div className="TestMobile">
+              <div className="testing">
+
+                      <h2>Testing</h2>
+                      <span>04-06-2022 <span>to</span> <span>04-05-2023</span> </span>
+                      
+                      
+              </div>
+              
+<div className="type">
+
+                    <div className="category">
+
+                        <h3>Type </h3>
+                        <h3>Category </h3>
+                        <h3>Sub Category </h3>
+                      <h3>Measurement </h3>
+                      <h3>Measure by </h3>
+                      <h3>Measure by </h3>
+                      </div>
+
+                      <div className="lorem">
+
+                        <h3>Lorem</h3>
+                        <h3>Lorem</h3>
+                      <h3>Lorem</h3>
+                      <h3>Lorem</h3>
+                      <h3>Lorem</h3>
+                      <h3>Lorem</h3>
+                      </div>
+                 
+                      </div>
+
+              
+              </div>
+
+              <div className="paragraph">
+                <div className="paraBtn">
+                  <button>?</button>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, adipisci 
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, adipisci?
+                  
+                  </p>
+                </div>
+                <div className="paraInput">
+                  <input type="text" placeholder="search" />
+                  <button>submit</button>
+                </div>
+              </div>
+              <div className="inputTabs">
+                <input type="text" placeholder="search" />
+                <button className="firstBtn">Quntity</button>
+                <button>Price</button>
+                <button>To</button>
+                <button>Quntity</button>
+                <button>Price</button>
+
+              </div>
+              <div className="fitbit">
+                  <h1>FitBIT</h1>
+                  <h5>current Api</h5>
+                </div>
+                <div className="followers">
+                <h1>1567</h1>
+                <p>Number of followers</p>
+              </div>
+              <div className="pridiction">
+                <div>
+                  <h5>Pridictions</h5>
+                </div>
+                <div className="slideWraper">
+                  <div className="lables">
+                    <div>
+                      <input type="radio" checked />
+                      <span>Yes</span>
+                    </div>
+                    <div>
+                      <h6>80%</h6>
+                    </div>
+                  </div>
+                  <div className="Rangeslider">
+                    <input
+                      type="range"
+                      name=""
+                      id=""
+                      value={80}
+                      max={100}
+                      className="range"
+                    />
+                  </div>
+                </div>
+                <div className="LowerslideWraper">
+                  <div className="lables">
+                    <div>
+                      <input type="radio" />
+                      <span>Yes</span>
+                    </div>
+                    <div>
+                      <h6>80%</h6>
+                    </div>
+                  </div>
+                  <div className="Rangeslider">
+                    <input
+                      type="range"
+                      name=""
+                      id=""
+                      value={20}
+                      max={100}
+                      className="range"
+                    />
+                  </div>
+                </div>
+              </div>
+
+      </div>
+
     </>
   );
 };

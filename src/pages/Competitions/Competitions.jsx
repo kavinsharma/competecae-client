@@ -732,9 +732,9 @@ DataForDisplay.latest
 
         <div className="card">
             <div className="cardUppertitle">
-                <span> <img src={star} alt="" /> </span>
-                <span>Fitness</span>
-                <span> <img src={arrow} alt="" /> </span>
+                <span> <img src={star} alt="" className="star"  /> </span>
+                <span  >Fitness</span>
+                <span> <img src={arrow} alt="" className="dropdownimg" /> </span>
             </div>
             <div className="manstand">
                 <div>
@@ -746,8 +746,8 @@ DataForDisplay.latest
                                           : NA} alt="" />
                 </div>
                 <div>
-                    <h4>{comp.userDetails[0].userName}</h4>
-                    <h4>Loose 40 Lounds</h4>
+                    <h4 className="jose">{comp.userDetails[0].userName}</h4>
+                    <h4>Loose 40 Pounds</h4>
                 </div>
             </div>
         
@@ -763,7 +763,8 @@ DataForDisplay.latest
             <div className="mainsecond">
                 <div className="left">
         <h5>{comp.name} end in</h5>
-        <h2>34 days</h2>
+        <h2>34  </h2>
+        {/* <span className="days">days</span> */}
                 </div>
                 <div className="right">
         <div className='one'>
@@ -791,12 +792,12 @@ DataForDisplay.latest
                     </div>
                     <div className='img'>
                     <img src={frame} alt="" />
-        <span>{comp?.bidCount[0].win}</span>
+        <span>{comp?.bidCount[0].win} %</span>
                     </div>
                     <div className='img'>
         
                     <img src={frame2} alt="" />
-        <span>{comp?.bidCount[0].lose}</span>
+        <span>{comp?.bidCount[0].lose} %</span>
                     </div>
                 </div>
                 <div className="mainlowerthird">
